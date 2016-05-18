@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=0.0, initial-scale=0.0, maximum-scale=0.0, user-scalable=no">
+		<script type="text/javascript" src="cordova.js"></script>	
+		<style>
+			html, body{width:100%; height:100%;}
+			body{margin:0; padding:0;}
+			#blanker{width:173px; height:173px; background:url('loader.gif') no-repeat center center; display:none; z-index:1000; position:absolute;}
+			#offline-screen{width:100%; background:url('connectionlost.png') no-repeat center center; image-size:contain; display:none; z-index:1000; position:absolute;}
+		</style>
+    </head>
+    
+    <body>
+		<div id="blanker"></div>
+		<div id="offline-screen"></div>	
+		<iframe src="http://www.heelnederlanddeelt.nl/heelnederlanddeel-mobiel-30.html" onload="loaded();" name="container-frame" id="container-frame" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">			
+			// Initializing global variables
+			var calcTop = ((document.body.clientHeight / 2) - 48);
+			var calcLeft = ((document.body.clientWidth / 2) - 48);
+			document.getElementById('blanker').style.top = calcTop+'px';
+			document.getElementById('blanker').style.left = calcLeft+'px';
+			document.getElementById('offline-screen').style.height = document.body.clientHeight+'px';
+
+			// Add handlers for various stages
+			document.addEventListener("deviceready", onDeviceReady, false);			
+			
+			// Add support
+			//$.support.cors=true;
+			//$.mobile.allowCrossDomainPages = true;		
+			
+			function loaded(){
+				document.getElementById('blanker').style.display = 'none';
+			}
+
+			var receiveMessage = function receiveMessage(e){
+				switch (e.data) {
+					case 'setBlanker':
+						document.getElementById('blanker').style.display = 'block';
+						break;
+				}
+			};			
+			window.addEventListener("message", receiveMessage, false);
+			
+			function onDeviceReady() {
+				// Blanker on change				
+				document.addEventListener("online", doWhenOnline, false);
+				document.addEventListener("offline", doWhenOffline, false);
+				var networkState = navigator.connection.type;
+				
+				if(networkState == Connection.NONE) {
+					doWhenOffline();
+				}
+				else{
+					doWhenOnline();
+				}                				
+			}	
+			
+			function doWhenOnline(){
+				document.getElementById('offline-screen').style.display = 'none';
+			}
+			
+			function doWhenOffline(){				
+				document.getElementById('offline-screen').style.display = 'block';
+			}
+		</script>
+    </body>
+</html>

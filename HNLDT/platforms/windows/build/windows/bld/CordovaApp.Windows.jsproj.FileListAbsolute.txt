@@ -1,0 +1,17 @@
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\Debug\AnyCPU\win8.1\ReverseMap\resources.pri
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\Debug\AnyCPU\win8.1\AppxManifest.xml
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\Debug\AnyCPU\win8.1\CordovaApp.Windows.build.appxrecipe
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\Debug\AnyCPU\win8.1\GlobalizationProxy.winmd
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\CordovaApp.Windows.jsprojResolveAssemblyReference.cache
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\priconfig.xml
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\priconfig.xml.intermediate
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\layout.resfiles
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\layout.resfiles.intermediate
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\resources.resfiles
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\resources.resfiles.intermediate
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\pri.resfiles
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\pri.resfiles.intermediate
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\qualifiers.txt
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\qualifiers.txt.intermediate
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Brishni\Desktop\HNLDT\platforms\windows\build\windows\bld\ProjectArchitectures.txt

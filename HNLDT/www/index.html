@@ -37,6 +37,28 @@
 		<div id="offline-screen"></div>	
 		<iframe src="http://www.heelnederlanddeelt.nl/heelnederlanddeel-mobiel-30.html" onload="loaded();" name="container-frame" id="container-frame" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
 		<script type="text/javascript" src="js/index.js"></script>
-		
+		<script type="text/javascript">			
+			function onDeviceReady() {
+				// Blanker on change				
+				document.addEventListener("online", doWhenOnline, false);
+				document.addEventListener("offline", doWhenOffline, false);
+				var networkState = navigator.connection.type;
+				
+				if(networkState == Connection.NONE) {
+					doWhenOffline();
+				}
+				else{
+					doWhenOnline();
+				}                				
+			}	
+			
+			function doWhenOnline(){
+				document.getElementById('offline-screen').style.display = 'none';
+			}
+			
+			function doWhenOffline(){				
+				document.getElementById('offline-screen').style.display = 'block';
+			}
+		</script>
     </body>
 </html>

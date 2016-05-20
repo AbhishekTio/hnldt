@@ -62,11 +62,14 @@
 
 			var receiveMessage = function receiveMessage(e){
 				switch (e.data) {
-					case 'setBlanker':
+						case 'setBlanker':
 						document.getElementById('blanker').style.display = 'block';
 						break;
-				}
-			};			
+						case 'removeBlanker':
+						document.getElementById('blanker').style.display = 'none'; 
+						break;
+					}
+			};					
 			window.addEventListener("message", receiveMessage, false);
 			
 			function onDeviceReady() {

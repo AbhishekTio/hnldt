@@ -113,13 +113,13 @@
 				
 			}
 			
-			function doWhenOnline(){
+			socket.on('connect',function doWhenOnline()){
 				document.getElementById('offline-screen').style.display = 'none';
-			}
+			});
 
-			function doWhenOffline(){				
+			socket.on('disconnect',function doWhenOffline()){				
 				document.getElementById('offline-screen').style.display = 'block';
-			}
+			});
 		</script> 
     </body>
 </html>

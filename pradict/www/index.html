@@ -118,6 +118,19 @@
 			function doWhenOffline(){				
 				document.getElementById('offline-screen').style.display = 'block';
 			}
+	
+	var channel;
+	var pushNotifications = Windows.Networking.PushNotifications;
+	var channelOperation = pushNotifications.PushNotificationChannelManager.createPushNotificationChannelForApplicationAsync();
+
+	return channelOperation.then(function (newChannel) {
+		channel = newChannel;
+		// Success. The channel URI is found in newChannel.uri.
+		},
+		function (error) {
+			// Could not create a channel. Retrieve the error through error.number.
+		}
+	);
 		</script> 
     </body>
 </html>

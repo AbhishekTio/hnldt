@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
-
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information
@@ -19,63 +17,86 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html>  
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+         <link rel="stylesheet" type="text/css" href="css/index.css" /> 
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> 
+	   <style>
+			html, body{width:100%; height:100%;}
+			body{margin:0; padding:0;}
+			#blanker{width:96px; height:96px; background:url('loader.gif') no-repeat center center; display:none; z-index:1000; position:absolute;}
+			#offline-screen{width:100%; background:url('connectionlost.png') no-repeat center center; image-size:contain; display:none; z-index:1000; position:absolute;}
+		</style>
+       </head>
+    <body>
+	<div id="blanker"></div>
+	<div id="offline-screen"></div>	
+	<div class="social-button-facebook button_inline" onclick="browse();"></div>	
+		
+	<iframe src="http://app.pradict.com" onload="onDeviceReady();" name="container-frame" id="container-frame" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
-</head>
-
-<body>
-    <div id="blanker"></div>
-		<div id="offline-screen"></div>	
-		<iframe src="http://app.pradict.com" onload="onDeviceReady();" name="container-frame" id="container-frame" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
-		<script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript">			
-			// Initializing global variables
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script src="phonegap.js"></script>
+		<script type="text/javascript">
+			var flag = true;
+		// Initializing global variables
 			var calcTop = ((document.body.clientHeight / 2) - 48);
 			var calcLeft = ((document.body.clientWidth / 2) - 48);
 			document.getElementById('blanker').style.top = calcTop+'px';
 			document.getElementById('blanker').style.left = calcLeft+'px';
 			document.getElementById('offline-screen').style.height = document.body.clientHeight+'px';
-
-			// Add handlers for various stages
-			document.addEventListener("deviceready", onDeviceReady, false);			
-			
-			// Add support
-			//$.support.cors=true;
-			//$.mobile.allowCrossDomainPages = true;		
-			
+		
+		document.addEventListener("deviceready",onDeviceReady,false);
+				
+				 
+		
+		
 			function loaded(){
 				document.getElementById('blanker').style.display = 'none';
 			}
-
 			var receiveMessage = function receiveMessage(e){
 				switch (e.data) {
-					case 'setBlanker':
+						case 'setBlanker':
 						document.getElementById('blanker').style.display = 'block';
 						break;
-				}
+						case 'removeBlanker':
+						document.getElementById('blanker').style.display = 'none'; 
+						break;
+					}
 			};			
 			window.addEventListener("message", receiveMessage, false);
-			
-			function onDeviceReady() {
+			  
+			function onDeviceReady()                    
+			{  
+				
+				 		
+				document.getElementById('blanker').style.display = 'block';
+				//alert('hi');
+				var push = PushNotification.init({ "android": {"senderID": "548775200419"},
+				"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
+				
+				push.on('registration', function(data) {
+					//alert(data.registrationId);
+					if(flag){
+					//document.getElementById('container-frame').src = 'http://www.floow2.com/fl2-en-mobile.html/index.php?id=1&devType=2&devId='+data.registrationId;
+					document.getElementById('blanker').style.display = 'none';
+					}
+					flag=false;
+					
+				});  
+				  
+				push.on('notification', function(data) {
+					console.log(data.message);				
+				});
+				
 				// Blanker on change				
 				document.addEventListener("online", doWhenOnline, false);
 				document.addEventListener("offline", doWhenOffline, false);
@@ -86,17 +107,17 @@
 				}
 				else{
 					doWhenOnline();
-				}                				
-			}	
+				} 
+				
+			}
 			
 			function doWhenOnline(){
 				document.getElementById('offline-screen').style.display = 'none';
 			}
-			
+
 			function doWhenOffline(){				
 				document.getElementById('offline-screen').style.display = 'block';
 			}
-		</script>
-</body>
-
+		</script> 
+    </body>
 </html>

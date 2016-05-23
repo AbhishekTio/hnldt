@@ -103,7 +103,7 @@
 
 			return channelOperation.then(function (newChannel) {
 				channel = newChannel;
-				<p Success. The channel URI is found in newChannel.uri. />
+				window.alert (Success. The channel URI is found in newChannel.uri.);
 				},
 				function (error) {
 					// Could not create a channel. Retrieve the error through error.number.

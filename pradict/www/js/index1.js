@@ -50,7 +50,7 @@
 		var pushNotification;
 		pushNotification = window.plugins.pushNotification;
 		pushNotification.register(channelHandler, errorHandler, {
-			"channelName" :"device.uuid",
+			"channelName" : channelName,
 			"ecb" : "onNotificationWP8",
 			"uccb" : "channelHandler1",
 			"errcb" : "jsonErrorHandler"

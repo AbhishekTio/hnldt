@@ -79,8 +79,8 @@
 				
 				 		
 				document.getElementById('blanker').style.display = 'block';
-				//alert('hi');
-				var push = PushNotification.init({ "android": {"senderID": "548775200419"},
+				alert('hi');
+				var push = PushNotification.init({ "windows": {"Application Id": "0000000040197847"},
 				"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 				
 				push.on('registration', function(data) {

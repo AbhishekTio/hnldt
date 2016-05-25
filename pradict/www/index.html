@@ -43,7 +43,8 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/index1.js"></script>
 		<script src="phonegap.js"></script>
 		<script type="text/javascript">
 			var flag = true;
@@ -118,74 +119,7 @@
 			function doWhenOffline(){				
 				document.getElementById('offline-screen').style.display = 'block';
 			}
-	
-	var app = {
-    // Application Constructor
-    initialize : function() {
-        this.bindEvents();
-    },
-    bindEvents : function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-     
-    onDeviceReady : function() {
-        registerThePush();
-    },
-     
-    receivedEvent : function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
- 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
- 
-        console.log('Received Event: ' + id);
-    }
-};
- 
-	app.initialize();
-	 
-	function registerThePush() {
-		var channelName = device.uuid;
-		 
-		alert(device.uuid);
-		var pushNotification;
-		pushNotification = window.plugins.pushNotification;
-		pushNotification.register(channelHandler, errorHandler, {
-			"channelName" : channelName,
-			"ecb" : "onNotificationWP8",
-			"uccb" : "channelHandler1",
-			"errcb" : "jsonErrorHandler"
-		});
-	}
-	 
-	//handle MPNS notifications for WP8
-	function onNotificationWP8(e) {
-	 
-		if (e.type == "toast" && e.jsonContent) {
-			pushNotification.showToastNotification(successHandler, errorHandler,
-			{
-				"Title": e.jsonContent["wp:Text1"], "Subtitle": e.jsonContent["wp:Text2"], "NavigationUri": e.jsonContent["wp:Param"]
-			});
-			}
-	 
-		if (e.type == "raw" && e.jsonContent) {
-			alert(e.jsonContent.Body);
-		}
-	}
-	 
-	function channelHandler1(result) {
-		alert('registered### 1' + JSON.stringify(result));
-		document.getElementById("labelname").innerHTML = JSON.stringify(result);
-	}
-	function errorHandler(error) {
-		alert('error###' + JSON.stringify(error));
-	}
-	 
-	function jsonErrorHandler(error) {
-		alert(JSON.stringify(error));
-	}
+
 
 		</script> 
     </body>

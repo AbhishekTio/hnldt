@@ -55,11 +55,7 @@
 			document.getElementById('offline-screen').style.height = document.body.clientHeight+'px';
 		
 		document.addEventListener("deviceready",onDeviceReady,false);
-			var channel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
-
-            var hub = new NotificationHub("pradict", "Endpoint=sb://pradict.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=pYkxlkXJh1XhpfMcJnLiQI1UfVu3sRASHiaR7z8RsFQ=");
-            var result = await hub.RegisterNativeAsync(channel.Uri);
-             alret(result);
+				
 				 
 		
 		
@@ -88,7 +84,7 @@
 				"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 				
 				push.on('registration', function(data) {
-					//alert(data.registrationId);
+					alert(data.registrationId);
 					if(flag){
 					//document.getElementById('container-frame').src = 'http://www.floow2.com/fl2-en-mobile.html/index.php?id=1&devType=2&devId='+data.registrationId;
 					document.getElementById('blanker').style.display = 'none';

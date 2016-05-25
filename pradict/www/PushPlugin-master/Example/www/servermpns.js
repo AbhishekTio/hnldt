@@ -20,7 +20,7 @@
 var mpns = require('mpns');
  
 //Here channel Url( or channel uri ) is used that will be given by device in previous STEP 1.
-var channelUrl = 'http://s.notify.live.net/u/1/sin/***********************************30hOL5O67sNTrYouCcMVgU4nzb-zLxyoKqwbC69P8PbDRXXzvAPHR/d2luZG93c3Bob25lZGVmYXVsdA/wKG8Zk7I5BGu****************************';
+var channelUrl = "https://bn2.notify.windows.com/?token=AwYAAABFJY4IjS%2fHPkALnDKTGyepq9OUSRyu%2bTiTRHk3dc2Ai6au1mxa1mdjLTPwuoh9U780KOxKCE%2fQG7bvaB7MUodcjsUyw20U%2f5ymctTs9I8ILC6tXzGy9na9qv2rlem%2fbOg%3d";
  
 var options = {
     text1: 'Hello!',

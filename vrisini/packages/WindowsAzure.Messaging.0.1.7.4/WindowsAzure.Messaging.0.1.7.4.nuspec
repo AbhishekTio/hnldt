@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>WindowsAzure.Messaging</id>
+    <version>0.1.7.4</version>
+    <title>Windows Azure Service Bus for Windows Store</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=218949</licenseUrl>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkId=218964</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288890</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Use this with Windows Azure Service Bus (for Windows Store). It adds  Microsoft.WindowsAzure.Messaging.winmd to your project. This package is for developing Windows Store applications</description>
+    <summary />
+    <language>en-US</language>
+    <tags>ServiceBus Microsoft Azure Messaging PubSub Publish Subscribe Queue Topic Service Bus windowsazureofficial</tags>
+  </metadata>
+</package>

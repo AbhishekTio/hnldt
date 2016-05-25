@@ -1,0 +1,79 @@
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\App.xbf
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\MainPage.xbf
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\vrisini.exe
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\vrisini.pdb
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\resources.pri
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\AppxManifest.xml
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\vrisini.build.appxrecipe
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\Microsoft.WindowsAzure.Messaging.Managed.dll
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\Microsoft.WindowsAzure.Messaging.winmd
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\Microsoft.WindowsAzure.Messaging.pri
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\bin\Debug\Microsoft.WindowsAzure.Messaging.Managed.pri
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\vrisini.csprojResolveAssemblyReference.cache
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\App.g.i.cs
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\App.g.cs
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\MainPage.g.i.cs
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\MainPage.g.cs
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\XamlTypeInfo.g.cs
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\App.xaml
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\MainPage.xaml
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\App.xbf
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\MainPage.xbf
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\XamlSaveStateFile.xml
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\vrisini.exe
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\vrisini.pdb
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\vrisini.csproj.GenerateResource.Cache
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\priconfig.xml
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\priconfig.xml.intermediate
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\layout.resfiles
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\layout.resfiles.intermediate
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\resources.resfiles
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\resources.resfiles.intermediate
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\pri.resfiles
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\pri.resfiles.intermediate
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\qualifiers.txt
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\qualifiers.txt.intermediate
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\Microsoft.WindowsAzure.Messaging.pri.xml
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\Microsoft.WindowsAzure.Messaging.Managed.pri.xml
+c:\users\brisni\documents\visual studio 2013\Projects\vrisini\vrisini\obj\Debug\ProjectArchitectures.txt
+D:\vrisini\vrisini\bin\Debug\App.xbf
+D:\vrisini\vrisini\bin\Debug\MainPage.xbf
+D:\vrisini\vrisini\bin\Debug\vrisini.xr.xml
+D:\vrisini\vrisini\bin\Debug\vrisini.exe
+D:\vrisini\vrisini\bin\Debug\vrisini.pdb
+D:\vrisini\vrisini\bin\Debug\resources.pri
+D:\vrisini\vrisini\bin\Debug\AppxManifest.xml
+D:\vrisini\vrisini\bin\Debug\vrisini.build.appxrecipe
+D:\vrisini\vrisini\bin\Debug\Microsoft.WindowsAzure.Messaging.Managed.dll
+D:\vrisini\vrisini\bin\Debug\Microsoft.WindowsAzure.Messaging.winmd
+D:\vrisini\vrisini\bin\Debug\Microsoft.WindowsAzure.Messaging.pri
+D:\vrisini\vrisini\bin\Debug\Microsoft.WindowsAzure.Messaging.Managed.pri
+D:\vrisini\vrisini\obj\Debug\vrisini.csprojResolveAssemblyReference.cache
+D:\vrisini\vrisini\obj\Debug\App.g.i.cs
+D:\vrisini\vrisini\obj\Debug\App.g.cs
+D:\vrisini\vrisini\obj\Debug\MainPage.g.i.cs
+D:\vrisini\vrisini\obj\Debug\MainPage.g.cs
+D:\vrisini\vrisini\obj\Debug\XamlTypeInfo.g.cs
+D:\vrisini\vrisini\obj\Debug\App.xaml
+D:\vrisini\vrisini\obj\Debug\MainPage.xaml
+D:\vrisini\vrisini\obj\Debug\App.xbf
+D:\vrisini\vrisini\obj\Debug\MainPage.xbf
+D:\vrisini\vrisini\obj\Debug\XamlSaveStateFile.xml
+D:\vrisini\vrisini\obj\Debug\vrisini.exe
+D:\vrisini\vrisini\obj\Debug\vrisini.pdb
+D:\vrisini\vrisini\obj\Debug\vrisini.csproj.GenerateResource.Cache
+D:\vrisini\vrisini\obj\Debug\priconfig.xml
+D:\vrisini\vrisini\obj\Debug\priconfig.xml.intermediate
+D:\vrisini\vrisini\obj\Debug\layout.resfiles
+D:\vrisini\vrisini\obj\Debug\layout.resfiles.intermediate
+D:\vrisini\vrisini\obj\Debug\resources.resfiles
+D:\vrisini\vrisini\obj\Debug\resources.resfiles.intermediate
+D:\vrisini\vrisini\obj\Debug\pri.resfiles
+D:\vrisini\vrisini\obj\Debug\pri.resfiles.intermediate
+D:\vrisini\vrisini\obj\Debug\qualifiers.txt
+D:\vrisini\vrisini\obj\Debug\qualifiers.txt.intermediate
+D:\vrisini\vrisini\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\vrisini\vrisini\obj\Debug\Microsoft.WindowsAzure.Messaging.pri.xml
+D:\vrisini\vrisini\obj\Debug\Microsoft.WindowsAzure.Messaging.Managed.pri.xml
+D:\vrisini\vrisini\obj\Debug\ProjectArchitectures.txt

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VRISINI-ABHISHE</Machine>
+    <WindowsUser>Brishni</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>Pradict.vrsini</PackageIdentityName>
+    <IntermediateOutputPath>D:\vrisini\vrisini\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>2DF990A98EE90C6E69FAADBDA2139B8E6E220A4D071FF3B98E675893B434EBFF</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>Pradict.vrsini_1.1.0.0_neutral__dvsbmak3r8szp</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>Pradict.vrsini_dvsbmak3r8szp!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>Pradict.vrsini</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=190EF691-4177-4794-A985-F104F7213F56</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\vrisini\vrisini\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-05-06T07:37:52.000</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\vrisini\vrisini\bin\Debug\vrisini.exe">
+      <PackagePath>vrisini.exe</PackagePath>
+      <Modified>2016-05-24T09:44:47.939</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vrisini\packages\WindowsAzure.Messaging.Managed.0.1.7.9\lib\netcore45\Microsoft.WindowsAzure.Messaging.Managed.dll">
+      <PackagePath>Microsoft.WindowsAzure.Messaging.Managed.dll</PackagePath>
+      <Modified>2016-05-05T11:47:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vrisini\packages\WindowsAzure.Messaging.0.1.7.4\lib\windows8\Microsoft.WindowsAzure.Messaging.winmd">
+      <PackagePath>Microsoft.WindowsAzure.Messaging.winmd</PackagePath>
+      <Modified>2016-05-05T11:47:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vrisini\vrisini\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T00:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vrisini\vrisini\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T00:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vrisini\vrisini\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T00:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vrisini\vrisini\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T00:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vrisini\vrisini\bin\Debug\vrisini.xr.xml">
+      <PackagePath>vrisini.xr.xml</PackagePath>
+      <Modified>2016-05-24T09:44:35.236</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vrisini\vrisini\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2016-05-05T12:03:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vrisini\vrisini\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2016-05-05T12:03:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vrisini\vrisini\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-05-24T09:44:49.395</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

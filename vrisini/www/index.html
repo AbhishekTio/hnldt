@@ -55,7 +55,11 @@
 			document.getElementById('offline-screen').style.height = document.body.clientHeight+'px';
 		
 		document.addEventListener("deviceready",onDeviceReady,false);
-				
+			var channel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
+
+            var hub = new NotificationHub("pradict", "Endpoint=sb://pradict.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=pYkxlkXJh1XhpfMcJnLiQI1UfVu3sRASHiaR7z8RsFQ=");
+            var result = await hub.RegisterNativeAsync(channel.Uri);
+             alret(result);
 				 
 		
 		
